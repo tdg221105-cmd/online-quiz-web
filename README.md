@@ -84,6 +84,3 @@ The main objectives of this project are to:
 - Detailed explanations for each question  
 - Performance analytics and personalized study recommendations  
 
----
-
-© 2025 – Online Quiz Web Project
