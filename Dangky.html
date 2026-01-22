@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Ký</title>
+    <link rel="icon" type="image/png" href="icon.png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url("nenDangNhap.jpg");
+        }
+        .form-container {
+            width: 400px;
+            padding: 20px;
+            background-image: url("nen.jpg");
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+        }
+        .form-container h1 {
+            text-align: center;
+            color: #c000de;
+        }
+        .form-container input[type=text],
+        .form-container input[type=password],
+        .form-container select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        .form-container input[type=submit] {
+            width: 100%;
+            background-color: #c000de;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+        }
+        .form-container input[type=submit]:hover {
+            background: rgb(227, 161, 249);
+        }
+
+
+
+
+        
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>ĐĂNG KÝ </h1>
+        <form>
+            <input type="text" placeholder="Hãy nhập Email" id="Email" name="Email"><br>
+            <input type="password" placeholder="Nhập lại mật khẩu " id="mk2" name="mk2"><br>
+            <input type="password" placeholder="Hãy nhập mật khẩu" id="mk1" name="mk1"><br>
+            <p style="font-size: 15px;">Tôi đã có tài khoản rồi. <a href="dangnhap.html" style="text-decoration: none;">Đăng nhập</a> ngay!</p>
+    
+            <input  type="submit" value="Đăng Ký Ngay">
+
+        </form>
+    </div>
+</body>
+</html>

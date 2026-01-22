@@ -1,0 +1,326 @@
+/* Import Font từ Google */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@9,400;9,588;9,600;1,200;1,480;1,580&display=swap');
+
+/* Các điều chỉnh chung */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; /* Sử dụng font chữ Poppins */
+}
+
+/* Wrapper */
+#wrapper {
+    width: 1380px;
+    height: 800px;
+    margin: 0 auto;
+}
+
+/* Phần Header */
+#header {
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(to right, #b485fa,#f2a0ec);
+}
+
+#menu {
+    /* list-style: none; */
+    display: flex;
+    font-size: 17px;
+}
+
+#menu .item {
+    padding-right: 40px; /* Khoảng cách giữa các mục trong menu */
+}
+
+#menu .item a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#actions {
+    display: flex;
+}
+
+#actions .item {
+    margin-left: 25px;
+    padding-right: 20px;
+}
+
+/* Phần Banner */
+#banner {
+    width: 100%;
+    background-image: url("nen.jpg");
+    height: 560px;
+    display: flex;
+    text-shadow: 2px 2px #c000de;
+    padding: 0 203px; /* Khoảng cách lề của banner */
+    position: relative;
+   
+}
+
+.box-left, .box-right {
+    width: 50%;
+}
+
+.box-left h2 {
+    font-size: 48px;
+    margin-top: 110px;
+    color: white;
+}
+
+.box-left p {
+    color: #d0d0d0;
+}
+
+.box-left button {
+    width: 250px;
+    height: 45px;
+    margin-top: 40px;
+    font-size: 19px;
+    background: #c000de;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 20px;
+    transition: background 0.4s; /* Hiệu ứng khi hover */
+    
+}
+
+.box-left button:hover {
+    background: rgb(227, 161, 249);
+}
+
+#banner .box-right {
+    padding-left: 200px; /* Khoảng cách lề trái của phần box-right */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#banner .box-right img {
+    margin: 0 10px; /* Khoảng cách giữa các hình ảnh */
+    animation: animation 3s infinite linear; /* Hiệu ứng chuyển động */
+}
+
+#banner .box-right img:nth-child(1) {
+    animation-delay: 0.5s; /* Hoãn thời gian bắt đầu hiệu ứng */
+}
+
+@keyframes animation {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.text{
+    margin-top: 0px;
+    padding: 20px;
+    color: #fff;
+    background-image: linear-gradient(to right, #b485fa,#f2a0ec);
+    text-align: center;
+}
+.text h1{
+    font-size: 30px;
+}
+.text span{
+    font-size: 20px;
+}
+
+/* Phần Sản phẩm */
+#wp-products {
+    padding: 80px 134px 78px;
+    background-color:  #f1dcff;
+}
+
+#wp-products h2 {
+    text-align: center;
+    margin-bottom: 76px;
+    font-size: 40px;
+    color: #c000de;
+}
+
+#list-products {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#list-products .item {
+    width: 250px;
+    height: 250px;
+ 
+    border-radius: 10px;
+    margin-bottom: 50px;
+    font-size: 50px;
+    padding-top: 60px;
+   
+}
+
+
+
+#list-products .item img {
+    display: block;
+    margin: 17px auto 0; /* Canh giữa hình ảnh */
+    width: 250px;
+    height: 250px;
+}
+
+#list-products .item .name {
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 40px;
+    text-shadow: 2px 2px #ffffff;
+}
+
+
+
+
+/* Phân trang */
+.list-page {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-page .item {
+    margin: 0 20px;
+    width: 37px;
+    height: 37px;
+    background: #c000de;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-page .item:hover{
+    background: rgb(227, 161, 249);
+}
+
+.list-page .item a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.text2{
+    width: 100%;
+    background-image: url("nen.jpg");
+    height: 200px;
+    display: flex;
+    color: #fff;
+    text-shadow: 2px 2px #c000de;
+    padding: 50px; /* Khoảng cách lề của banner */
+    position: relative;
+    font-size: 35px;
+    justify-content: center;
+    
+
+}
+/* Phần Footer */
+#footer {
+    width: 100%;
+    background-image: linear-gradient(to right, #b485fa,#f2a0ec);
+    height: 250px;
+    margin-top: 0px;
+    padding: 57px 63px 0; /* Canh lề và padding */
+    display: flex;
+    justify-content: space-around;
+}
+
+#footer .box {
+    width: 250px;
+    color: #fff;
+}
+
+#footer.box.quick-menu {
+    margin-top: 10px;
+}
+
+#footer.box.quick-menu .item {
+    margin-top: 12px;
+}
+
+#footer.box.quick-menu ,.item a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#footer .box form input {
+    width: 294px;
+    height: 42px;
+    background: transparent;
+    padding-left: 20px;
+    color: #fff;
+    margin-top: 10px;
+}
+
+#footer .box form button {
+    background: #362f2f;
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
+    width: 163px;
+    height: 38px;
+    margin-top: 29px;
+    color: #fff;
+}
+
+
+
+/* Phan toan */
+#wp-productss {
+    padding: 80px 134px 78px;
+    
+    background-color:  #f1dcff;
+}
+
+#wp-productss h2 {
+    text-align: center;
+    margin-bottom: 76px;
+    font-size: 40px;
+    color: #c000de;
+}
+
+#list-productss {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#list-productss .item {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    font-size: 25px;
+    padding-top: 30px;
+   
+}
+
+#list-productss .item img {
+    display: block;
+    margin: 17px auto 0; /* Canh giữa hình ảnh */
+}
+
+#list-productss .item .name {
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 21px;
+}
+
